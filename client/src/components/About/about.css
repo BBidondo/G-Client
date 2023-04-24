@@ -1,0 +1,192 @@
+/* DISEÑO NUEVO */
+
+.primerDiv {
+  margin: 0px 0px;
+position: relative;
+
+min-width: 300px;
+  font-family: proxima-nova, sans-serif;
+  background-color: #070707;
+  border-top-right-radius: 10px;
+  border-color: #f5f3f300;
+  color: #f5f3f3;
+  width: 45%;
+  height: 689px;
+  box-shadow:inset inset 0 5px 0 5px  #f5f3f3;
+}
+
+.segundoDiv {
+  margin: 40px 60px;
+  position: relative;
+  font-family: proxima-nova, sans-serif;
+  display: flex;
+
+}
+.All {
+  display: flex;
+  width: 100%;  background-image: url('https://64.media.tumblr.com/tumblr_m3es1yqFB61qdhxyeo1_500.gif');
+  position: relative;
+  background-size: 785px;
+  min-width: 300px;
+}
+.fotoback {
+  margin-top: 0%;
+  margin-left: 110%;
+  width: 80%;
+  position: absolute;
+}
+.sobrePro {
+  font-weight: 800;
+  font-size: 35px;
+  text-align: left;
+  position: relative;
+  top: 90px;
+
+  left: 60px;
+}
+.parrafo1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  width: 89%;
+  color: #aaaaad;
+  text-align: left;
+  position: relative;
+  top: 80px;
+  left: 45px;
+}
+.AboutTheProject {
+  font-weight: 800;
+  text-align: left;
+  position: relative;
+  left: 45px;
+  top: 70px;
+  /* background-color: red; */
+}
+
+/* CARDS */
+
+.tarjetaPadre {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding-right: 10px;
+  margin-top:50px
+
+  /* padding: 0; */
+}
+
+.yo {
+  width: 697px;
+  height: 300px;
+  background: #000000e8;
+  border-radius: 15px;
+  justify-content: space-around;
+  color: #fff;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    #7600ff 0px 30px 60px -30px; */
+  margin-top: 13%;
+}
+.foto {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  position: relative;
+  left: 15px;
+  /* display: block; */
+  top: -82px;
+  object-fit: contain;
+}
+
+.nombre {
+  /* display: inline-flex; */
+  position: inherit;
+  margin-top: 54px;
+  margin-left: 270px;
+  color: #fcfafe;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  
+}
+.descripcion1 {
+  position: relative;
+  left: 270px;
+  margin-top: -255px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  width: 400px;
+  height: 150px;
+  text-align: left;
+  font-size: 18px;
+  text-align: left;
+  color:#aaaaad;
+  line-height: 1.5rem;
+}
+
+.links {
+  position: relative;
+  bottom: 200px;
+  left: 540px;
+  display: flex;
+  width: 120px;
+  padding: 10px;
+}
+.linkedinI {
+  position: relative;
+  margin-right: 18px;
+  top: 5px;
+}
+
+
+@media only screen and (max-width: 844px){
+
+  .primerDiv {
+    margin: 0px 0px;
+display:block;  
+  min-width: 300px;
+    font-family: proxima-nova, sans-serif;
+    background-color: #0c0c0c;
+    border-top-right-radius: 10px;
+    border-color: #f5f3f300;
+    color: #f5f3f3;
+    width: 80%;
+    height: 100%;
+    box-shadow:inset inset 0 5px 0 5px  #f5f3f3;
+  }
+  
+  
+  
+
+ 
+
+.AboutTheProject {
+  font-weight: 700;
+  font-size: 26px;
+  text-align: left;
+  position: relative;
+  left: 60px;
+  top: 10px;
+  /* background-color: red; */
+}
+
+.parrafo1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 38px;
+  width: 65%;
+  color: #aaaaad;
+  text-align: left;
+  position: center;
+  display:inherit;
+  top: 0px;
+  left: 60px;
+}
+
+.segundoDiv {
+ 
+  display: none;
+
+}
+}

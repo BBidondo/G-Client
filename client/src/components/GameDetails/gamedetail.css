@@ -1,0 +1,186 @@
+.container-detail {
+  background-color: rgb(0, 0, 0);
+  min-height: 120vh;
+}
+
+.details-div {
+  display: flex;
+  justify-content: center;
+
+  z-index: 1;
+  margin: 0px;
+  opacity: 0.9;
+  height: 900px;
+}
+
+.details-div p {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  font-weight: 250;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-img {
+  width: auto;
+}
+
+.details-div img {
+  border: 5px solid transparent;
+  border-radius: 15px;
+  display: block;
+  position: relative;
+  left: -19.5rem;
+  margin: 10px auto;
+  width: 500px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  top: 7.75rem;
+  animation: pulsate-border 2s ease-out infinite;
+}
+
+@keyframes pulsate-border {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #7700ff;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 2rem;
+  background-color: #7700ff;
+  border-radius: 10px;
+}
+.Date {
+  position: absolute;
+  top: 36rem;
+  left: 12rem;
+}
+.Rating {
+  position: absolute;
+  top: 40rem;
+  left: 12rem;
+}
+
+.Platforms {
+  position: absolute;
+  top: 42rem;
+  left: 12rem;
+  width: 500px;
+  height: 200px;
+}
+
+.Genres {
+  position: absolute;
+  top: 38rem;
+  left: 12rem;
+}
+.div-descr {
+  margin: 20px;
+}
+
+.des-title {
+  display: flex;
+  position: absolute;
+  top: 12.5rem;
+}
+
+.descripcion {
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: calc(0.9 - 0.1);
+  border-radius: 10px;
+  padding-left: 52%;
+  width: 600px;
+  margin-top: -11.75rem;
+  padding-bottom: 12%;
+}
+
+.div-descr button {
+  margin: 5px;
+  width: 90px;
+  height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  left:136%;
+  top: 0rem;
+  border-radius: 5px;
+  border-color: #00000000;
+  background-color: rgb(255, 255, 255);
+}
+
+.div-descr button:hover {
+  background-color: rgb(191, 187, 192);
+  color: rgb(0, 0, 0);
+}
+
+
+@media only screen and (max-width: 844px) {
+  .container-detail {
+    background-color: rgb(0, 0, 0);
+     min-height: 280vh; 
+    
+  }
+
+  .title {
+    top:0rem;
+  left:0rem;
+  }
+  .details-div img {
+  left:0rem;
+  width:350px;
+  top:0rem
+  }
+  .descripcion {
+    left:-11rem;
+    top:65rem;
+    width: 345px;
+    position:absolute;
+  }
+  .div-descr button {
+  display: none;
+  }
+
+  .Date {
+    
+    top: 34rem;
+    left: 2.5rem;
+  }
+  .Rating {top: 36.5rem;
+    left: 2.5rem;
+    
+  }
+  
+  .Platforms {
+        top: 42.5rem;
+        left: 2.5rem;
+        width: 330px;
+    height: 200px;
+  }
+  
+  .Genres {
+    top: 39.5rem;
+    left: 2.5rem;
+  }
+  .des-title{
+top:-4rem;
+  }
+
+  .Footer{
+    display: none;
+  }
+
+}

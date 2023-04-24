@@ -1,0 +1,170 @@
+.main-add {
+  width: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://64.media.tumblr.com/3b5440683e71e2d39f998c6ed99c3feb/tumblr_ord7ll2peg1sx56xso1_1280.gifv");
+  background-size: cover;
+  margin-left: 8.85%;
+}
+.container-add input {
+  border-radius: 10px;
+}
+.container-add textarea {
+  border-radius: 10px;
+}
+.Image {
+  margin-top: 14%;
+}
+.genres-div {
+  justify-content: center;
+}
+
+.plat-div {
+  border-radius: 10px;
+  justify-content: center;
+  padding-bottom: 0%;
+}
+
+.container-add {
+  text-align: center;
+  margin: 7px;
+  padding: 20px;
+  width: 45%;
+  height: 670px;
+  background-color: #000000;
+  border-top-right-radius: 10px;
+  margin-left: -70%;
+  margin-top: 0%;
+}
+
+.container-add h2 {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 40px;
+  color: rgb(255, 253, 253);
+}
+
+.div-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.genres-div {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgba(44, 42, 42, 0);
+  width: 650px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.plat-div {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 650px;
+
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.container-add label {
+  font-size: large;
+  margin: 3px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.1em 0.1em rgb(62, 63, 63);
+}
+
+.name {
+  height: 25px;
+  width: 400px;
+  border-color: rgba(255, 255, 255, 0);
+  font-family: Helvetica;
+  transition: background-color 0.5s ease;
+
+}
+.name:hover{
+  background-color: rgb(191, 191, 191);
+
+}
+
+.container-add input {
+  background-color: rgb(255, 255, 255);
+}
+
+.container-add textarea {
+  background-color: rgb(255, 255, 255);
+}
+
+textarea {
+  height: 30px;
+  width: 100%;
+  resize: none;
+}
+.dt {
+  padding-right: 1%;
+}
+.submit {
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 40px;
+  width: 13%;
+  /* Agregamos estas líneas para especificar el estilo inicial del botón */
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+
+.submit:hover {
+  background-color: rgb(191, 191, 191);
+ 
+}
+
+@media only screen and (max-width: 844px) {
+  .container-add {
+    text-align: center;
+    margin: 7px;
+    padding: 10%;
+    width: 90%;
+    height: 670px;
+    background-color: #0c0c0c;
+    border-top-right-radius: 10px;
+    margin-left: -10%;
+    margin-top: 0%;
+  }
+  .genres-div {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgba(44, 42, 42, 0);
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: -15px;
+  }
+
+  .plat-div {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 400px;
+    margin-left: -10px;
+
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .submit {
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 26px;
+    width: 33%;
+  }
+
+  .name {
+    height: 25px;
+    width: 340px;
+    border-color: rgba(255, 255, 255, 0);
+    font-family: Helvetica;
+    margin-right: 20px;
+  }
+}

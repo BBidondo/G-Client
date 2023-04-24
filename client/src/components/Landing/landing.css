@@ -1,0 +1,195 @@
+
+
+  
+
+.background {
+  display: block;
+
+  background-repeat: repeat;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-right: 1em;
+  position: fixed;
+
+  background: rgb(0, 0, 0);
+  background-size: 500%;
+}
+
+/* .kratos {
+  position: absolute;
+  width: 55%;
+  height: 500;
+  left: 45%;
+  top: 0px;
+}
+.kratos2 {
+  position: absolute;
+  width: 55%;
+  height: 500;
+  left: 45%;
+  top: 0px;
+} */
+
+/* img {
+  display: block;
+  width: 79%;
+  align-items: center;
+  justify-content: center;
+}
+
+.MyImage {
+  display: flex;
+  align-items: center;
+  height: 60%;
+  width: 288px;
+} */
+
+.myButton {
+  position: sticky;
+  left: 570px;
+  top: 386px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 23%;
+  flex-wrap: wrap;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.myButton:hover,
+.myButton:focus,
+.myButton:active {
+  box-shadow: 0 0 20 px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .myButton {
+    position: sticky;
+  left:  47px;
+  top: 386px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 23%;
+  flex-wrap: wrap;
+  min-width: 300px;
+  }
+
+
+}
+
+.Title {
+  position: absolute;
+  width: 333px;
+  height: 150px;
+  left: 570px;
+  top: 310px;
+  min-width: 300px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 5px;
+  letter-spacing: 0em;
+
+  color: #ffffff;
+}
+
+.Title4 {
+  position: absolute;
+  width: 333px;
+  height: 150px;
+  left: 768px;
+  top: 310px;
+
+  font-family: "Helvetica";
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 5px;
+  letter-spacing: 0em;
+
+  color: #ffffff;
+}
+.Title5 {
+  position: absolute;
+  width: 633px;
+  height: 150px;
+  left: 570px;
+  top: 310px;
+
+  font-family: "Helvetica";
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 5px;
+  letter-spacing: 0em;
+
+  color: #ffffff;
+}
+
+
+/* .Title1 {
+  position: absolute;
+  width: 633px;
+  height: 10px;
+  left: 314px;
+  top: 285px;
+
+  font-family: "Helvetica";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+
+  color: #b3adae;
+}
+
+.Title2 {
+  position: absolute;
+  width: 833px;
+  height: 10px;
+  left: 314px;
+  top: 338px;
+
+  font-family: "Helvetica";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+
+  color: #b3adae;
+}
+
+.fuego {
+  position: absolute;
+  width: 10%;
+  height: 500;
+  left: 21.5%;
+  top: 160px;
+} */
+  

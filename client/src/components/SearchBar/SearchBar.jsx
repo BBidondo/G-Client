@@ -47,9 +47,9 @@ function SearchBar({ searchByName, volverAhome }) {
   return (
     <div className="Background">
       <div className="searchbar-div">
-      <Link to="/about">
+      
           <img className="Logo" src={logo} alt="Logo" />
-        </Link>      
+             
       <input
           className="bar-btn"
           name="buscar"

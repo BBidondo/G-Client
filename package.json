@@ -7,12 +7,7 @@
     "path": false,
     "os": false
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-},
+
 "build": {
   "script": "npm run build",
   "timeout": 60

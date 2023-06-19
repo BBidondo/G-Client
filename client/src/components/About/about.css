@@ -148,7 +148,7 @@
     background-color: #0c0c0c;
     border-radius: 10px;
     border-color: #f5f3f300;
-    color: #ffffff;
+    color: #f5f3f3;
     box-shadow: inset inset 0 5px 0 5px #f5f3f3;
   }
   
@@ -156,11 +156,11 @@
 
   .parrafo1 {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 17px;
     line-height: 36px;
     width: 80%;
-    color: #ffffff;
+    color: #aaaaad;
     display: flex;
     flex-direction: column;
     justify-content: center;

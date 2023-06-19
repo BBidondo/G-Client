@@ -25,7 +25,7 @@ export default function About() {
       <div className="All">
         
 
-      <div >
+      <div className="primerDiv">
       {/* <img src={fuego} className="fotoback" /> */}
 
         

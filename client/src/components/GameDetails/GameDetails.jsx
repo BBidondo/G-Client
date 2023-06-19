@@ -5,21 +5,19 @@ import { getVideogameDetail, clean } from "../../Redux/actions";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 import photo from "../../img/conecting.gif";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom"; // Importa `useParams` desde react-router-dom
 import "./gamedetail.css";
 
-export default function GameDetails(props) {
+export default function GameDetails() {
+  const { idVideogame } = useParams(); // Utiliza `useParams` para obtener el parámetro `idVideogame`
+  const dispatch = useDispatch();
+  const gameDetails = useSelector((state) => state.gameDetails);
 
-   
-    let gameDetails = useSelector((state)=>state.gameDetails) 
-    const {idVideogame} = props.match.params; 
-    const dispatch = useDispatch() 
+  useEffect(() => {
+    dispatch(getVideogameDetail(idVideogame));
+    return () => dispatch(clean());
+  }, [dispatch, idVideogame]);
 
-
-    useEffect(() => { 
-      dispatch(getVideogameDetail(idVideogame)); 
-      return ()=> dispatch(clean()) 
-    }, [dispatch, idVideogame]); 
   
   return ( 
     <div className="container-detail">

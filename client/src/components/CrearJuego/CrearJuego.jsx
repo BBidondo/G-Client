@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import NavBar from "../NavBar/NavBar";
 import axios from "axios";
@@ -6,12 +6,8 @@ import "./CrearJuego.css";
 import { getAllGames } from "../../Redux/actions";
 import Footer from "../Footer/Footer";
 
-function CrearJuego(props) {
+const CrearJuego = (props) => {
   const dispatch = useDispatch();
-  const [errors, setErrors] = useState({
-    form: "Must to be completed!",
-  });
-
   const [form, setForm] = useState({
     name: "",
     description: "",
@@ -21,6 +17,10 @@ function CrearJuego(props) {
     platforms: [],
   });
 
+  const [errors, setErrors] = useState({
+    form: "Must be completed!",
+  });
+
   const [image, setImage] = useState(null);
 
   const handleSelect = (e) => {
@@ -28,7 +28,7 @@ function CrearJuego(props) {
       if (e.target.checked) {
         setForm((prevState) => ({
           ...prevState,
-          genres: form.genres.concat(e.target.value),
+          genres: [...form.genres, e.target.value],
         }));
       } else {
         setForm((prevState) => ({
@@ -41,7 +41,7 @@ function CrearJuego(props) {
       if (e.target.checked) {
         setForm((prevState) => ({
           ...prevState,
-          platforms: form.platforms.concat(e.target.name),
+          platforms: [...form.platforms, e.target.name],
         }));
       } else {
         setForm((prevState) => ({
@@ -58,12 +58,7 @@ function CrearJuego(props) {
         [e.target.name]: e.target.value,
       }));
     }
-    setErrors(
-      validate({
-        ...form,
-        [e.target.name]: e.target.value,
-      })
-    );
+    setErrors(validate({ ...form, [e.target.name]: e.target.value }));
   };
 
   const validate = (form) => {
@@ -88,23 +83,21 @@ function CrearJuego(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    validate(form);
-    let checkboxsErrors = [];
-    if (form.genres.length < 1) checkboxsErrors.push("Genres is required");
-    if (form.platforms.length < 1)
-      checkboxsErrors.push("Platforms is required");
-    if (Object.values(errors).length || checkboxsErrors.length) {
-      // Object.values --> retorno un array con los values
-      return alert(Object.values(errors).concat(checkboxsErrors).join("\n"));
+    const formErrors = validate(form);
+    let checkboxErrors = [];
+    if (form.genres.length < 1) checkboxErrors.push("Genres is required");
+    if (form.platforms.length < 1) checkboxErrors.push("Platforms is required");
+    if (Object.keys(formErrors).length || checkboxErrors.length) {
+      const allErrors = Object.values(formErrors).concat(checkboxErrors);
+      alert(allErrors.join("\n"));
+      return;
     }
-    axios
-      .post("http://localhost:3001/videogame", form)
-      .then((res) => console.log(res.data));
-    alert(`${form.name} successfully created`);
-
-    dispatch(getAllGames());
-    props.history.push("/videogames");
-    //dispatch(getAllGames())
+    axios.post("http://localhost:3001/videogame", form).then((res) => {
+      console.log(res.data);
+      alert(`${form.name} successfully created`);
+      dispatch(getAllGames());
+      props.history.push("/videogames");
+    });
   };
 
   return (

@@ -10,9 +10,8 @@
   justify-content: space-around;
   margin-bottom: 0%;
   box-shadow: #000000 0px 10px 10px 10px;
-  position:absolute;
+  position: absolute;
   min-width: 300px;
-
 }
 
 /* .redes {
@@ -38,7 +37,6 @@
 .Git:hover {
   background-color: #ffffff;
   border-radius: 100%;
-
 }
 
 .Lin {
@@ -51,14 +49,11 @@
   border-radius: 100%;
   margin-right: 5%;
   transition: background-color 0.5s ease;
-
 }
 
 .Lin:hover {
   background-color: #f1f1f1;
   border-radius: 100%;
-
-
 }
 
 .titulo2 {
@@ -68,7 +63,6 @@
   font-size: 20px;
   line-height: 30px;
   color: #858484;
-
 }
 
 .parrafo1 {
@@ -126,13 +120,8 @@
 }
 
 @media only screen and (max-width: 844px) {
-
   .footer {
-    position: relative;
-    margin-top:300%
-
-
+    
+ 
   }
-
-
 }

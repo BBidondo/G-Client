@@ -2,9 +2,9 @@
 
 .primerDiv {
   margin: 0px 0px;
-position: relative;
+  position: relative;
 
-min-width: 300px;
+  min-width: 300px;
   font-family: proxima-nova, sans-serif;
   background-color: #070707;
   border-top-right-radius: 10px;
@@ -12,7 +12,7 @@ min-width: 300px;
   color: #f5f3f3;
   width: 45%;
   height: 689px;
-  box-shadow:inset inset 0 5px 0 5px  #f5f3f3;
+  box-shadow: inset inset 0 5px 0 5px #f5f3f3;
 }
 
 .segundoDiv {
@@ -20,11 +20,11 @@ min-width: 300px;
   position: relative;
   font-family: proxima-nova, sans-serif;
   display: flex;
-
 }
 .All {
   display: flex;
-  width: 100%;  background-image: url('https://64.media.tumblr.com/tumblr_m3es1yqFB61qdhxyeo1_500.gif');
+  width: 100%;
+  background-image: url("https://64.media.tumblr.com/tumblr_m3es1yqFB61qdhxyeo1_500.gif");
   position: relative;
   background-size: 785px;
   min-width: 300px;
@@ -72,7 +72,7 @@ min-width: 300px;
   margin: 0 auto;
   justify-content: center;
   padding-right: 10px;
-  margin-top:50px
+  margin-top: 50px;
 
   /* padding: 0; */
 }
@@ -107,7 +107,6 @@ min-width: 300px;
   color: #fcfafe;
   font-family: proxima-nova, sans-serif;
   font-weight: 700;
-  
 }
 .descripcion1 {
   position: relative;
@@ -120,7 +119,7 @@ min-width: 300px;
   text-align: left;
   font-size: 18px;
   text-align: left;
-  color:#aaaaad;
+  color: #aaaaad;
   line-height: 1.5rem;
 }
 
@@ -138,55 +137,38 @@ min-width: 300px;
   top: 5px;
 }
 
-
-@media only screen and (max-width: 844px){
-
+@media only screen and (max-width: 844px) {
   .primerDiv {
-    margin: 0px 0px;
-display:block;  
-  min-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    min-width: 300px;
     font-family: proxima-nova, sans-serif;
     background-color: #0c0c0c;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     border-color: #f5f3f300;
-    color: #f5f3f3;
-    width: 80%;
-    height: 100%;
-    box-shadow:inset inset 0 5px 0 5px  #f5f3f3;
+    color: #ffffff;
+    box-shadow: inset inset 0 5px 0 5px #f5f3f3;
   }
   
   
-  
 
- 
+  .parrafo1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 36px;
+    width: 80%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0px;
+   
+  }
 
-.AboutTheProject {
-  font-weight: 700;
-  font-size: 26px;
-  text-align: left;
-  position: relative;
-  left: 60px;
-  top: 10px;
-  /* background-color: red; */
-}
-
-.parrafo1 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 38px;
-  width: 65%;
-  color: #aaaaad;
-  text-align: left;
-  position: center;
-  display:inherit;
-  top: 0px;
-  left: 60px;
-}
-
-.segundoDiv {
- 
-  display: none;
-
-}
+  .segundoDiv {
+    display: none;
+  }
 }

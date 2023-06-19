@@ -25,11 +25,12 @@ export default function About() {
       <div className="All">
         
 
-      <div className="primerDiv">
+      <div >
       {/* <img src={fuego} className="fotoback" /> */}
 
-        <h1 className="AboutTheProject">The Project</h1>
+        
         <p className="parrafo1">
+        <h2>The Project</h2>
          " I utilized React, Redux, HTML, CSS, SQL, and JavaScript to develop a
           high-quality application. Working with these technologies was
           challenging and rewarding, and they played a critical role in creating

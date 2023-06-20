@@ -52,8 +52,8 @@ router.get('/:idVideogame', async (req, res) => {
 // CREACIÓN DE JUEGO
 
 router.post('/', async (req, res) => {
-  const { name, description, releaseDate, rating, genres, platforms } = req.body;
-  if (!name || !description || !rating) {
+  const { name, description, releaseDate, rating, genres, platforms, background_image } = req.body;
+  if (!name || !description || !rating || !background_image) {
     return res.status(400).json({ msg: 'Faltan datos' });
   }
   try {
@@ -62,6 +62,7 @@ router.post('/', async (req, res) => {
       description,
       releaseDate,
       rating,
+      background_image,
       platforms: platforms.join('-')
     });
     await videogameCreated.setGenres(genres);

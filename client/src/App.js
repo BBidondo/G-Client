@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/videogames" element={<Videogames />} />
           <Route path="/crearjuego" element={<CrearJuego />} />
-          <Route path="/videogame/:idVideogame" element={<GameDetails />} /> {/* Asegúrate de utilizar `element` en lugar de `component` */}
+          <Route path="/videogame/:idVideogame" element={<GameDetails />} /> 
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Page404 />} />
         </Routes>

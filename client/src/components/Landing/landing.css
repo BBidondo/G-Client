@@ -1,7 +1,3 @@
-
-
-  
-
 .background {
   display: block;
 
@@ -16,34 +12,7 @@
   background-size: 500%;
 }
 
-/* .kratos {
-  position: absolute;
-  width: 55%;
-  height: 500;
-  left: 45%;
-  top: 0px;
-}
-.kratos2 {
-  position: absolute;
-  width: 55%;
-  height: 500;
-  left: 45%;
-  top: 0px;
-} */
 
-/* img {
-  display: block;
-  width: 79%;
-  align-items: center;
-  justify-content: center;
-}
-
-.MyImage {
-  display: flex;
-  align-items: center;
-  height: 60%;
-  width: 288px;
-} */
 
 .myButton {
   position: sticky;
@@ -88,20 +57,18 @@
 @media only screen and (max-width: 768px) {
   .myButton {
     position: sticky;
-  left:  47px;
-  top: 386px;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 10px;
-  width: 23%;
-  flex-wrap: wrap;
-  min-width: 300px;
+    left: 47px;
+    top: 386px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 23%;
+    flex-wrap: wrap;
+    min-width: 300px;
   }
-
-
 }
 
 .Title {
@@ -152,7 +119,6 @@
   color: #ffffff;
 }
 
-
 /* .Title1 {
   position: absolute;
   width: 633px;
@@ -192,4 +158,3 @@
   left: 21.5%;
   top: 160px;
 } */
-  

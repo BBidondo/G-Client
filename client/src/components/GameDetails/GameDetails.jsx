@@ -18,20 +18,19 @@ export default function GameDetails() {
     return () => dispatch(clean());
   }, [dispatch, idVideogame]);
 
-  
-  return ( 
+  return (
     <div className="container-detail">
-            <NavBar />
+      <NavBar />
 
-      <div className="details-div"> 
-        {gameDetails ? ( 
+      <div className="details-div">
+        {gameDetails ? (
           <div>
             <h3 className="title">{gameDetails.name}</h3>
-            {gameDetails.background_image ? ( 
+            {gameDetails.background_image ? (
               <div className="div-img">
                 <img src={gameDetails.background_image} alt="Videogame"></img>
               </div>
-            ) : ( 
+            ) : (
               <div className="div-img">
                 <img src={photo} alt="Videogame"></img>
               </div>
@@ -39,57 +38,55 @@ export default function GameDetails() {
             {
               <p className="Date">
                 <strong>Release Date</strong>:{" "}
-                {`${gameDetails.releaseDate || "None"}`} 
-               
+                {`${gameDetails.releaseDate || "None"}`}
               </p>
             }
             <p className="Rating">
-              <strong>Rating</strong>: ★ {`${gameDetails.rating}`} 
+              <strong>Rating</strong>: ★ {`${gameDetails.rating}`}
             </p>
-            {gameDetails.description && 
-            gameDetails.genres && 
-            gameDetails.platforms ? ( 
+            {gameDetails.description &&
+            gameDetails.genres &&
+            gameDetails.platforms ? (
               <div className="div-descr">
                 {
-                  
                   <p className="descripcion">
                     <h3 className="des-title">About the Game</h3>
-                    {gameDetails.description.replace(/(<([^>]+)>)/gi, "")} 
-                    
+                    {gameDetails.description.replace(/(<([^>]+)>)/gi, "")}
                   </p>
                 }
                 {
-                  < p className="Genres">
+                  <p className="Genres">
                     <strong>Genres</strong>:{" "}
-                    {`${gameDetails.genres.join(", ")}`} 
-                    
+                    {`${gameDetails.genres.join(", ")}`}
                   </p>
                 }
                 {
                   <p className="Platforms">
                     <strong>Platforms</strong>:{" "}
                     {`${
-                      typeof gameDetails.platforms === "string" 
-                        ? gameDetails.platforms 
-                        : gameDetails.platforms.join(", ") 
+                      typeof gameDetails.platforms === "string"
+                        ? gameDetails.platforms
+                        : gameDetails.platforms.join(", ")
                     }`}
                   </p>
                 }
 
-                 <NavLink to="/videogames"> 
-                  <button >Back</button>
-                 </NavLink> 
+                <NavLink to="/videogames">
+                  <button>Back</button>
+                </NavLink>
               </div>
-            ) : ( 
+            ) : (
               <h1>Cargando</h1>
             )}
           </div>
-        ) : ( 
+        ) : (
           <h1>Cargando</h1>
         )}
       </div>
-            <Footer/>
-
+      <div className="footer-container">
+        <Footer />
+      </div>
     </div>
+    
   );
 }

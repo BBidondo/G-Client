@@ -179,8 +179,10 @@
 top:-4rem;
   }
 
-  .Footer{
+  .footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: none;
   }
-
 }

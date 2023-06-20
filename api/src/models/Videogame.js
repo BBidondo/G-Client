@@ -29,6 +29,9 @@ module.exports = (sequelize) => {
         defaultValue: DataTypes.UUIDV4,
         primaryKey: true,
       },
+      background_image: {
+        type: DataTypes.STRING(2049),
+      },
     },
     { timestamps: true, createdAt: "creado", updatedAt: false }
   );

@@ -1,5 +1,16 @@
 import axios from "axios";
 
+export const GET_GENRES = "GET_GENRES";
+export const SEARCH_BY_NAME = "SEARCH_BY_NAME";
+export const GET_VIDEOGAME_DETAIL = "GET_VIDEOGAME_DETAIL";
+export const GET_ALL_GAMES = "GET_ALL_GAMES";
+export const VOLVER_A_HOME = "VOLVER_A_HOME";
+export const CLEAN = "CLEAN";
+export const ORDER_BY = "ORDER_BY";
+export const FILTER_BY = "FILTER_BY";
+export const CREATE_GAME  = "CREATE_GAME ";
+
+
 
 
 export function searchByName(name)  { 
@@ -31,7 +42,7 @@ export function getGenres() {
 export function getVideogameDetail(id) { 
   return function (dispatch) {
     axios
-      .get(`http://localhost:3001/videogame/${id}`) 
+      .get(`/videogame/${id}`) 
       .then((res) => { 
         console.log(res)
         dispatch({ type: 'GET_VIDEOGAME_DETAIL', payload: res.data }); 
@@ -81,3 +92,8 @@ export function filterBy(order) {
     dispatch({ type: 'FILTER_BY', payload: order }); 
   };
 }
+
+export const createVideogame = (game) => async dispatch => {
+  const newGame = await axios.post("/videogames", { data: game });
+  return dispatch({type: CREATE_GAME, payload: newGame.data})
+};

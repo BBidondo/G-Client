@@ -22,7 +22,7 @@ function App() {
           <Route path="/crearjuego" element={<CrearJuego />} />
           <Route path="/videogame/:idVideogame" element={<GameDetails />} />
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<Page404 />} />
+          <Route path="*" element={<Page404 />}/>
         </Routes>
       </BrowserRouter>
     </Provider>

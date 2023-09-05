@@ -2,8 +2,7 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 import "./about.css";
-import fuego from "../../img/fuego.png";
-import linkedinMorado from "../../img/linkedinMorado.png";
+
 
 
 const team = [
@@ -48,7 +47,7 @@ export default function About() {
               <div className="yo">
                 <div className="divFoto">
                 <h1 className="nombre">{el.name}</h1>
-                  <img src={el.image} className="foto" />
+                  <img src={el.image} className="foto" alt="" />
                 </div>
 
                 <div>

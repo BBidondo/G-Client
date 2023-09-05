@@ -17,11 +17,11 @@ const CrearJuego = (props) => {
     platforms: [],
   });
 
-  const [errors, setErrors] = useState({
+  const [ setErrors] = useState({
     form: "Must be completed!",
   });
 
-  const [image, setImage] = useState(null);
+  const [ setImage] = useState(null);
 
   const handleSelect = (e) => {
     if (e.target.parentNode.parentNode.id === "genres") {

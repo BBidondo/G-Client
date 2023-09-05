@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useCallback } from 'react';
 import { connect } from 'react-redux';
 import { searchByName, getAllGames, volverAhome } from '../../Redux/actions';
 import './SearchBar.css';
 import lupa from "../../img/icone-loupe-gris.png";
 import logo from  '../../img/white logo.png';
-
 
 function SearchBar({ searchByName, volverAhome }) {
   const [input, setInput] = useState({
@@ -18,19 +16,13 @@ function SearchBar({ searchByName, volverAhome }) {
     });
   };
 
-  const handleOnClick = () => {
+  const handleOnClick = useCallback(() => {
     searchByName(input.buscar);
     setInput({
       buscar: ''
     });
-  };
+  }, [searchByName, input.buscar]);
 
-  const handleOnClickAll = () => {
-    volverAhome();
-    setInput({
-      buscar: ''
-    });
-  };
 
   useEffect(() => {
     function handleEnterPress(event) {
@@ -47,10 +39,8 @@ function SearchBar({ searchByName, volverAhome }) {
   return (
     <div className="Background">
       <div className="searchbar-div">
-      
-          <img className="Logo" src={logo} alt="Logo" />
-             
-      <input
+        <img className="Logo" src={logo} alt="Logo" />
+        <input
           className="bar-btn"
           name="buscar"
           placeholder="Search"

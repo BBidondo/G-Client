@@ -92,7 +92,7 @@ const CrearJuego = (props) => {
       alert(allErrors.join("\n"));
       return;
     }
-    axios.post("http://localhost:3001/videogame", form).then((res) => {
+    axios.post("http://http://geeking.vercel.app/videogame", form).then((res) => {
       console.log(res.data);
       alert(`${form.name} successfully created`);
       dispatch(getAllGames());

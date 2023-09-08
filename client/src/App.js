@@ -10,7 +10,7 @@ import Videogames from "./components/Videogames/Videogames.jsx";
 import store from "../src/Redux/store/index";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "http://geeking.vercel.app";
 
 function App() {
   return (

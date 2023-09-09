@@ -2,6 +2,8 @@ require('dotenv').config();
 const { Sequelize } = require("sequelize");
 const fs = require("fs");
 const path = require("path");
+
+// Obtén las variables de entorno desde tu archivo .env
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_DATABASE } = process.env;
 
 const sequelize = new Sequelize(
@@ -10,7 +12,7 @@ const sequelize = new Sequelize(
   DB_PASSWORD, // Utiliza la variable de entorno DB_PASSWORD para la contraseña
   {
     host: DB_HOST,
-    port: DB_PORT, // Utiliza la variable de entorno DB_PORT para el puerto
+    port: parseInt(DB_PORT), // Convierte DB_PORT a un número entero
     dialect: 'postgres', // Usa el dialecto 'postgres' para PostgreSQL
     logging: false, // set to console.log to see the raw SQL queries
     native: false, // lets Sequelize know we can use pg-native for ~30% more speed
